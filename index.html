@@ -668,11 +668,6 @@ function renderStudentInputs() {
         <span class="s-unit">M</span>
       </div>`;
   }
-  if (fixed.length > 0) {
-    html += `<p class="form-hint" style="margin-top:10px">`;
-    html += fixed.map(s => `[${formatFormula(s.formula)}](${s.state}) = <strong>${s.fixedConc}&nbsp;M</strong> (일정)`).join('&emsp;');
-    html += `</p>`;
-  }
   document.getElementById('s-input-area').innerHTML = html;
 }
 
